@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- ======  CSS ====== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- ======  RESET ====== -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+
+</head>
+<body>
+<main>
+    <section class="main-text">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+            but understanding how developers think is invaluable. </p>
+    </section>
+    <section class="trial-form">
+        <button class="btn-trial btn"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+        <form name="sign-up-form" method="post" autocomplete="off">
+            <label for="first_name" class="hidden-label">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="First Name">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <p class="error first-name-error"></p>
+
+            <label for="last_name" class="hidden-label">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <p class="error last-name-error"></p>
+
+            <label for="email" class="hidden-label">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Email Address">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <p class="error email-error"></p>
+
+            <label for="password" class="hidden-label">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <p class="error password-error"></p>
+
+            <label for="confirm_pwd" class="hidden-label">Password Confirmation:</label>
+            <input type="password" id="confirm_pwd" name="confirm_pwd" placeholder="Password confirmation">
+            <p class="error confirm_pwd-error"></p>
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+
+            <button type="submit" name="register-submission" class="btn-submit btn" value="Sign Up">Claim your free
+                trial
+            </button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Marlon Montenegro</a>.
+    </p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

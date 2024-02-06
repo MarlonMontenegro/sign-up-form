@@ -1,0 +1,228 @@
+/* =============== GOOGLE FONTS  =============== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+
+    /************* PRIMARY COLORS **********/
+
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --white: #FFFF;
+
+    /************* ACCENT COLORS **********/
+
+    --Blue: hsl(248, 32%, 49%);
+    --morado: #5E54A4;
+    /************* NEUTRAL COLORS **********/
+
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+    /************* TYPOGRAPHY  *************/
+    --popins-font: 'Poppins', sans-seri;
+
+    /************* SIZES *************/
+    --Font-size-default: 16px;
+    --line-height-title: 1.2;
+    --line-height-text: 1.7;
+    /************* BREAKPOINTS *************/
+
+    --Mobile-breakpoint: 375px;
+    --Desktop-breakpoint: 1440px;
+
+}
+
+/* =============== LAYOUT  =============== */
+
+html {
+    font-size: var(--Font-size-default);
+}
+
+
+body {
+    background: var(--Red);
+    background-image: url("../../images/bg-intro-desktop.png");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+
+/* =============== MAIN  =============== */
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-text {
+    padding: 10px;
+    margin-left: 50px;
+
+}
+
+.main-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--popins-font);
+    color: var(--white);
+    line-height: var(--line-height-title);
+    padding-bottom: 15px;
+    padding-right: 25px;
+}
+
+.main-text p {
+    font-size: 1rem;
+    padding-right: 40px;
+    line-height: var(--line-height-text);
+    text-align: left;
+    color: var(--white);
+    font-family: var(--popins-font);
+}
+
+/* =============== BUTTONS  =============== */
+
+.btn {
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    font-size: 1rem;
+}
+
+.btn-trial {
+    width: 520px;
+    background-color: var(--Blue);
+    color: var(--white);
+    margin: 0 0 10px;
+    cursor: pointer;
+}
+
+.btn-trial span {
+    font-weight: 700;
+}
+
+.btn-submit {
+    border: 0;
+    background-color: var(--Green);
+    border-radius: 10px;
+    width: 470px;
+    font-family: var(--popins-font);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+/* =============== FORMS  =============== */
+
+.hidden-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.trial-form {
+    margin-right: 200px;
+
+}
+
+
+.trial-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.trial-form input {
+    height: 25px;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    font-family: var(--popins-font);
+    font-weight: 600;
+    outline: none;
+    padding: 15px;
+}
+
+input:focus {
+    border: 1px var(--Blue) solid;
+}
+
+.terms {
+    font-family: var(--popins-font);
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+.terms span {
+    color: var(--Red);
+    font-weight: 700;
+}
+
+/* =============== ERRORS =============== */
+
+.error {
+    font-size: 0.6rem;
+    font-family: var(--popins-font);
+    color: var(--Red);
+    font-weight: 700;
+    font-style: italic;
+    display: none;
+}
+
+input:invalid {
+    border: 1px solid var(--Red);
+}
+
+.error.display-error {
+    display: block;
+    margin-top: -5px;
+    text-align: end;
+
+}
+
+ion-icon {
+    color: var(--Red);
+    margin-bottom: -50px;
+    margin-left: 500px;
+    font-size: 2rem;
+    display: none;
+}
+
+
+/* =============== ATTRIBUTION  =============== */
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--popins-font);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background: var(--Red);
+        background-image: url("../../images/bg-intro-mobile.png");
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+
+}
