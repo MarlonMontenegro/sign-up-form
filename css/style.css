@@ -131,7 +131,6 @@ main {
 
 .trial-form {
     margin-right: 200px;
-
 }
 
 
@@ -163,6 +162,7 @@ input:focus {
     font-size: 0.7rem;
     text-align: center;
     color: var(--Grayish-Blue);
+    padding: 12px;
 }
 
 .terms span {
@@ -208,6 +208,9 @@ ion-icon {
     font-size: 1rem;
     text-align: center;
     font-family: var(--popins-font);
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .attribution a {
@@ -222,6 +225,141 @@ ion-icon {
         background-image: url("../../images/bg-intro-mobile.png");
         background-size: contain;
         background-repeat: repeat;
+        background-position: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main-text {
+        padding: 100px 50px;
+        margin-left: 50px;
+
+    }
+
+    .main-text h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .main-text p {
+        font-size: 1rem;
+        padding-right: 30px;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+
+    /* =============== FORMS  =============== */
+    .trial-form {
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+
+    .trial-form form {
+        gap: 15px;
+        padding: 25px;
+    }
+
+    .trial-form input {
+        padding: 15px;
+    }
+
+    /* =============== BUTTONS  =============== */
+    .btn-trial {
+        height: 85px;
+    }
+
+
+    .btn-submit {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    body {
+        background: var(--Red);
+        background-image: url("../../images/bg-intro-mobile.png");
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main-text {
+        padding: 35px 0 35px;
+    }
+
+    .main-text h1 {
+        font-size: 2.3rem;
+    }
+
+
+    /* =============== FORMS  =============== */
+
+
+    .trial-form {
+       width: 450px;
+    }
+
+
+    .trial-form form {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .trial-form input {
+        height: 25px;
+        padding: 5px;
+        width:  400px;
+    }
+
+    .terms {
+        padding: 20px;
+    }
+
+
+    /* =============== BUTTONS  =============== */
+    .btn-trial {
+        height: 85px;
+        width: 450px;
+    }
+
+
+    .btn-submit {
+        height: 70px;
+        width: 400px;
+    }
+
+    /* =============== Errors  =============== */
+
+    .error {
+        font-size: 0.6rem;
+        font-family: var(--popins-font);
+        color: var(--Red);
+        font-weight: 700;
+        font-style: italic;
+        display: none;
+    }
+
+    .error.display-error {
+        display: block;
+        margin-top: -5px;
+        margin-right: 10px;
+        text-align: end;
+
     }
 
 
